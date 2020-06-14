@@ -7,7 +7,7 @@ class HomeContainer extends Component{
         return(
             <div>
                 <p><Link to="/campuses">All Campuses</Link></p>
-                <p><Link to={AllCampusesContainer}>All Students</Link></p>
+                <p><Link to="/students">All Students</Link></p>
             </div>
         )
     }
