@@ -1,8 +1,31 @@
 import React from "react";
 import PropTypes from "prop-types";
-
+import {Link} from 'react-router-dom'
 const AllStudentsView = (props) => {
-    return(<h1>Hello from AllStudentsView</h1>)
+    if (!props.allStudents.length) {
+        return <div className="all-students">There are no students</div>;
+      }
+    return(
+        <div>
+        <Link to="/students/new" className="add-student">
+        Add a Student
+        </Link>
+        <div>
+            {props.allStudents.map((student) => (
+            <div key={student.id}>
+                <Link to={`/students/${student.id}`}>
+                <h1>{student.firstName} {student.lastName}</h1>
+                </Link>
+                <li>Student email: {student.email}</li>
+                <li>Student GPA: {student.gpa}</li>
+                {console.log(student.id)}
+                <button onClick={() => props.handleDelete(student.id)}>
+                    Delete
+                </button>
+            </div>))}
+        </div>
+        </div>)
+        
 
 }
 export default AllStudentsView;
