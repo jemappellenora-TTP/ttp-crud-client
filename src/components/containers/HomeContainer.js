@@ -4,9 +4,9 @@ import {Link} from 'react-router-dom';
 class HomeContainer extends Component{
     render(){
         return(
-            <div>
-                <p><Link to="/campuses">All Campuses</Link></p>
-                <p><Link to="/students">All Students</Link></p>
+            <div className="home">
+                <p><Link className="home-link" to="/campuses">All Campuses</Link></p>
+                <p><Link className="home-link" to="/students">All Students</Link></p>
             </div>
         )
     }

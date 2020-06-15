@@ -5,7 +5,7 @@ import "./styles/AllCampusesView.css";
 const AddStudentView = (props) => {
     return(
         <div>
-          <form onSubmit={props.handleSubmit}>
+          <form className="forms" onSubmit={props.handleSubmit}>
             <img src={props.imageUrl} width="200px" alt={props.id} />
             <div>
               First Name:{" "}
