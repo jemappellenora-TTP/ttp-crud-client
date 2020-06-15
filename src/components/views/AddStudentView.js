@@ -5,6 +5,7 @@ const AddStudentView = (props) => {
     return(
         <div>
           <form onSubmit={props.handleSubmit}>
+            <img src={props.imageUrl} width="200px" alt={props.id} />
             <div>
               First Name:{" "}
               <input
@@ -44,12 +45,18 @@ const AddStudentView = (props) => {
             </div>
             <div>
               CampusId:{" "}
-              <input
-                value={props.imageUrl}
-                name="campusId"
-                onChange={props.handleChange}
-                required
-              ></input>
+              <select name="campusId" onChange={props.handleChange}>
+                <option value="">Please select a Campus</option>
+                {props.allCampuses
+                .map((campus) => {
+                    console.log(campus.id);
+                    return (
+                    <option value={campus.id} key={campus.id}>
+                        {campus.name}
+                    </option>
+                    );
+                })}
+          </select>
             </div>
             <button>Create Student</button>
           </form>

@@ -7,3 +7,5 @@ export { default as NavBarView } from "./NavBarView";
 export { default as StudentNameListView } from "./StudentNameListView";
 export { default as AllStudentsView } from "./AllStudentsView";
 export { default as AddStudentView} from "./AddStudentView"
+export { default as SingleStudentView} from "./SingleStudentView";
+export { default as EditStudentFormView } from "./EditStudentFormView";

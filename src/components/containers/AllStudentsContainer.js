@@ -11,7 +11,7 @@ class AllStudentsContainer extends Component {
   }
 
   handleDelete = (id) => {
-    //this.props.deleteStudent(id);
+    this.props.deleteStudent(id);
   };
 
   render() {
@@ -35,7 +35,7 @@ const mapState = (state) => {
 const mapDispatch = (dispatch) => {
   return {
     fetchAllStudents: () => dispatch(fetchAllStudentsThunk()),
-    //deleteStudent: (id) => dispatch(deleteStudentThunk(id)),
+    deleteStudent: (id) => dispatch(deleteStudentThunk(id)),
   };
 };
 
