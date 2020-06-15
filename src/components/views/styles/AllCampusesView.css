@@ -1,9 +1,38 @@
+body{
+  background-color: tan;
+}
+.per-campus{
+  border: 2px solid darkred;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgb(192, 141, 141);
+}
+nav {
+  padding: 2rem;
+}
+.nav-link{
+  padding: 1.5rem;
+  color: snow;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
 .all-campuses {
-  color: tomato;
+  color: darkblue;
+  float: left;
+  width: 50%;
+  padding: 0 10px;
 }
 .add-campus {
   border: 2px solid teal;
-  padding: 10px;
+  padding: 20px;
+  margin: 20px;
+  align-items: start;
+  background-color: white;
+}
+
+.forms{
+  border: 2px solid teal;
+  padding: 20px;
   margin: 20px;
   background-color: white;
 }

@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./styles/AllCampusesView.css";
 
 const AddCampusFormView = (props) => {
   return (
     <div>
-      <form onSubmit={props.handleSubmit}>
+      <form className="forms" onSubmit={props.handleSubmit}>
         <div>
           Name:{" "}
           <input

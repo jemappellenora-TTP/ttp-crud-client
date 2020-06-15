@@ -1,11 +1,11 @@
 import React from "react";
-import "./styles/CampusView.css";
+import "./styles/AllCampusesView.css";
 import { Link } from "react-router-dom";
 import { StudentNameListContainer } from "../containers";
 
 const CampusView = (props) => {
   return (
-    <>
+    <div className="per-campus">
       <img src={props.campus.imageUrl} alt={props.campus.name} />
       <h1>{props.campus.name}</h1>
       <h3>{props.campus.address}</h3>
@@ -20,7 +20,7 @@ const CampusView = (props) => {
       <button onClick={() => props.handleDelete(props.campus.id)}>
         Delete
       </button>
-    </>
+    </div>
   );
 };
 

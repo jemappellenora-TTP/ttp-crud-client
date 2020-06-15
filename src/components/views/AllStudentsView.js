@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import "./styles/AllCampusesView.css";
+
 const AllStudentsView = (props) => {
     if (!props.allStudents.length) {
         return <div className="all-students">There are no students</div>;
